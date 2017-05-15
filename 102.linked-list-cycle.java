@@ -1,3 +1,6 @@
+//102.带环链表 / linked-list-cycle
+//http://www.lintcode.com/zh-cn/problem/linked-list-cycle/
+
 // 给定一个链表，判断它是否有环。
 
 // 给出 -21->10->4->5, tail connects to node index 1，返回 true
