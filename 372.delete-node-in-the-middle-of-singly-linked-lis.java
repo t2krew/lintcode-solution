@@ -1,3 +1,6 @@
+//372.在O(1)时间复杂度删除链表节点 / delete-node-in-the-middle-of-singly-linked-lis
+//http://www.lintcode.com/problem/delete-node-in-the-middle-of-singly-linked-list
+
 // 给定一个单链表中的一个等待被删除的节点(非表头或表尾)。请在在O(1)时间复杂度删除该链表节点。
 
 // Exa
