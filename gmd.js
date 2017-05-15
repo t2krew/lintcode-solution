@@ -10,15 +10,18 @@ const JAVA_URL = 'https://github.com/t2krew/lintcode-solution/blob/master/';
 const PYTHON_URL = 'https://github.com/t2krew/lintcode-solution/blob/master/python/';
 const PROBLEM_URL = 'http://www.lintcode.com/zh-cn/problem';
 
-
-
 let items = {};
+//readme.md 公共头部
 let header = '# lintcode-solution\n' + 
                 'Lintcode题目解法 http://www.lintcode.com/\n' +
                 '<br/>\n' + 
-                '<br/>\n'
+                '<br/>\n';
 
-function readSolution(root) {
+/**
+ * 遍历目录下的题目文件
+ * @param {String} root 根目录
+ */
+;(function readSolution(root) {
   let result = fs.readdirSync(root);
   result.forEach((ele) => {
     let cpath = path.join(root, ele);
@@ -46,10 +49,8 @@ function readSolution(root) {
       console.error(err);
     }
   });
-}
+})(__dirname);
 
-
-readSolution(__dirname);
 
 let keys = Object.keys(items).sort((a, b) => {
   return a - b;
