@@ -1,3 +1,13 @@
+/**
+ * 使用该脚本自动生成readme.md的文件规则
+ * 在每个题目文件下第一行为该文件名称的注释
+ * 如： //9.Fizz Buzz 问题 / fizz-buzz (java)
+ *      # 9.Fizz Buzz 问题 / fizz-buzz (python)
+ * 每个题目文件的第二行为该题目的原地址链接
+ * 如： //http://www.lintcode.com/problem/fizz-buzz (java)
+ *      # http://www.lintcode.com/problem/fizz-buzz (python)
+ */
+
 'use strict';
 
 let fs = require('fs');
