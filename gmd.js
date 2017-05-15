@@ -69,9 +69,9 @@ let keys = Object.keys(items).sort((a, b) => {
 keys.forEach((ele) => {
   header += '-\t[' + items[ele][2] + '](' + items[ele][3] + ')' +
             ' ==> ' +
-            (items[ele][0]? '([Java solution](' + (items[ele][0] ? items[ele][0] : '') + ')' : '(Java solution') +
+            (items[ele][0]? '(<a href="' + items[ele][0] + '" target="_blank">Java solution</a>' : '<span>Java solution</span>') +
             ' - ' + 
-            (items[ele][1] ? '[Python solution](' + items[ele][1] + '))\n' : 'Python solution)\n');
+            (items[ele][1] ? '<a href="' + items[ele][1] + '" target="_blank">Python solution</a>)\n' : '<span>Python solution</span>)\n');
 });
 
 try {
