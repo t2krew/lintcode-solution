@@ -1,3 +1,6 @@
+//9.Fizz Buzz 问题 / fizz-buzz
+//http://www.lintcode.com/problem/fizz-buzz
+
 // 给你一个整数n. 从 1 到 n 按照下面的规则打印每个数：
 
 // 如果这个数被3整除，打印fizz.
