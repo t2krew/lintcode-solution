@@ -21,11 +21,6 @@ const PYTHON_URL = 'https://github.com/t2krew/lintcode-solution/blob/master/pyth
 const PROBLEM_URL = 'http://www.lintcode.com/zh-cn/problem';
 
 let items = {};
-//readme.md 公共头部
-let header = '# lintcode-solution\n' + 
-                'Lintcode题目解法 http://www.lintcode.com/\n' +
-                '<br/>\n' + 
-                '<br/>\n';
 
 /**
  * 遍历目录下的题目文件
@@ -65,6 +60,12 @@ let header = '# lintcode-solution\n' +
 let keys = Object.keys(items).sort((a, b) => {
   return a - b;
 });
+
+//readme.md 公共头部
+let header = '# lintcode-solution\n' + 
+              '***[Lintcode](http://www.lintcode.com)题目解法，当前题目数量：' + Object.keys(items).length + '***\n' +
+              '<br/>\n' + 
+              '<br/>\n';
 
 keys.forEach((ele) => {
   header += '-\t[' + items[ele][2] + '](' + items[ele][3] + ')' +
