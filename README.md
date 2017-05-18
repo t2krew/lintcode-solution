@@ -1,5 +1,5 @@
 # lintcode-solution
-Lintcode题目解法 http://www.lintcode.com/
+***[Lintcode](http://www.lintcode.com)题目解法，当前题目数量：9***
 <br/>
 <br/>
 -	[ 1.A + B 问题 / a-b-problem]( http://www.lintcode.com/zh-cn/problem/a-b-problem/) ==> (<a href="https://github.com/t2krew/lintcode-solution/blob/master/1.a-b-problem.java" target="_blank">Java solution</a> - <span>Python solution</span>)
